@@ -1,16 +1,16 @@
-<header>
-  <h1>
+<header class="cabecalho">
+  <h1 class="logo">
     <a routerLink="">
-      Everton Walker
+      Design responsivo
     </a>
   </h1>
-  <nav>
-    <button>Abrir / Fechar</button>
-    <ul>
+  <nav class="menu-principal">
+    <button id="buttonMenu" class="menu-principal__btn " [class.menu-principal__btn--fechar]="!buttonClosed" (click)="changeButtonMenu()">Abrir / Fechar</button>
+    <ul class="menu-principal__lista">
       <li>
-        <a routerLink="about-us"> Sobre </a>
-        <a routerLink="portfolio"> Portfolio </a>
-        <a routerLink="contact"> Contato </a>
+        <a class="menu-principal__item" routerLink="about-us"> Sobre </a>
+        <a class="menu-principal__item" routerLink="portfolio"> Portfolio </a>
+        <a class="menu-principal__item" routerLink="contact"> Contato </a>
       </li>
     </ul>
   </nav>

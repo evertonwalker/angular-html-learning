@@ -8,9 +8,9 @@ describe('HeaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ]
+      declarations: [HeaderComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
@@ -22,4 +22,14 @@ describe('HeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
+  it('Should change buttonClosed value and add new style when button was clicked', () => {
+    component.changeButtonMenu();
+    expect(component.buttonClosed).toBe(true)
+    const button = document.getElementById('buttonMenu')
+    expect(button?.className.includes('menu-principal__btn--fechar')).toBeTruthy()
+
+  })
+
 });

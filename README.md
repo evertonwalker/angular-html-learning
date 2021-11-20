@@ -49,3 +49,16 @@ label[class*="label"] { } -> Procurando todos elementos label que possuem dentro
 - ~ -> PRocura o valor desde que esteja separado por um espaço
 
 Outro ponto é que seletor de atributos são mais lentos para processar do que os seletores normais.
+
+
+# Box model
+
+É interessante que você entenda que todo elemento no html é inserido como uma caixa e todos possuem as mesmas caracteristicas padrões: margin -> border ->  padding -> conteúdo e largura e altura dele.
+
+Para saber o tamanho real de um elemento você sempre precisa somar o padding + border + largura ( width )
+
+-  block: Quando é colocado no html, ele ocupa o documento inteiro - ou a linha toda desse local.
+-  inline: Segue o fluxo de linha, como se fosse palavras uma do lado da outra.
+
+
+BOX-SIZING: content-box -> O valor padrão desta propriedade é content-box, que considera os valores das propriedades ´border´ e ´padding´ para calcular o tamanho que o elemento ocupa na tela. Porém, ao definirmos ´box-sizing: border-box´, há alteração no cálculo padrão que conhecemos, fazendo com que o navegador passe a considerar a altura e largura do elemento contando o ´padding´ e o ´border´ do elemento.

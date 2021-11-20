@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../src/assets/source-sans-pro/SourceSansPro-Regular.otf')
+}
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../src/assets/source-sans-pro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+}
+
+body {
+    font-family: "Source Sans Pro";
+}
+
+
+.logo {
+    background-image: url('/../../assets/img/logotipo-preto.png');
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 53px;
+    text-indent: -9999px; // Gambiarra para fazer o texto sumir da caixa
+    display: block;
+    margin: 0;
+}

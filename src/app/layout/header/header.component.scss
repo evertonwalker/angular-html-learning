@@ -1,0 +1,22 @@
+.cabecalho {
+    background-color: #fff;
+}
+
+
+.menu-principal__btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    background-color: #fff;
+    background-image: url('../../../assets/img/menuprincipal-btn-bg.png');
+    background-repeat: no-repeat;
+    background-position: 5px 6px;
+    border-color: #c4c4c4;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.menu-principal__btn--fechar {
+    background-position: -48px 7px;
+}

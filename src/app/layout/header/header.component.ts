@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  buttonClosed = false
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeButtonMenu(): void {
+    this.buttonClosed = !this.buttonClosed
   }
 
 }
